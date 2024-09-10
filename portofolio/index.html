@@ -14,14 +14,21 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="en">
     <meta http-equiv="refresh" content="60">
-    <font face="Arial" size="2" color="black">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Portofolio</title>
   </head>
   <body>
-    <h1 align="center">Zaky Dio Akbar Pangestu</h1>
-    <table>
+    <table width="100%" border="1">
+      <!-- Header -->
       <tr>
-        <td>
+        <td colspan="3" align="center">
+          <h1>Zaky Dio Akbar Pangestu</h1>
+        </td>
+      </tr>
+
+      <!-- Profil Pribadi dan Foto -->
+      <tr>
+        <td width="70%" valign="top">
           <h2>Profil Pribadi</h2>
           <p align="justify">Nama saya Zaky Dio Akbar Pangestu, saya adalah seorang mahasiswa di Institut Teknologi Kalimantan prodi Informatika. 
             Saya lahir di Klaten pada tanggal 7 September 2003. Saya juga memiliki ketertarikan dalam dunia teknologi dan ingin 
@@ -30,77 +37,111 @@
             yang ada unsur Indonesia di dalamnya. Saya juga ingin membuat game yang bisa dimainkan oleh banyak orang dan semua kalangan.
           </p>
         </td>
-        <td>
-          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp;
-        </td>
-        <td valign="top">
+        <td width="5%"></td> <!-- Jarak antara teks dan gambar -->
+        <td width="25%" valign="top" align="center">
           <img src="./img/zaky.jpeg" alt="Foto Profil Zaky Dio Akbar Pangestu" width="150" height="150">
         </td>
       </tr>
+
+      <!-- Hobi -->
+      <tr>
+        <td colspan="3">
+          <h2>Hobi</h2>
+          <ul>
+            <li>Bermain Game</li>
+            <li>Menonton Film</li>
+            <li>Membaca Buku</li>
+            <li>Bermain Musik</li>
+          </ul>
+        </td>
+      </tr>
+
+      <!-- Pengalaman -->
+      <tr>
+        <td colspan="3">
+          <h2>Pengalaman</h2>
+          <ol>
+            <li>PT.Davidi Internasional berposisi magang sebagai mechanical maintenance di Balikpapan - 2019</li>
+            <li>PT.Pratama Widya TBK bekerja sebagai RIG Pengeboran di Balikpapan - 2021</li>
+            <li>PT.Rig Nusantara Jaya bekerja sebagai Work Permit di Balikpapan - 2022</li>
+            <li>PT.Jurong Engineering Lestari bekerja sebagai Work Permit di Balikpapan - 2022</li>
+          </ol>
+        </td>
+      </tr>
+
+      <!-- Data Pribadi -->
+      <tr>
+        <td colspan="3">
+          <h2>Data Pribadi</h2>
+          <table width="50%" border="1" align="center">
+            <tr>
+              <th>Jenis Informasi</th>
+              <th>Data</th>
+            </tr>
+            <tr>
+              <td align="center">Nama</td>
+              <td align="center">Zaky Dio Akbar Pangestu</td>
+            </tr>
+            <tr>
+              <td align="center">Tanggal Lahir</td>
+              <td align="center">7 September 2003</td>
+            </tr>
+            <tr>
+              <td align="center">Alamat</td>
+              <td align="center">Jl. Manuntung Gg Darussalam rt 03, Kariangau, Balikpapan Barat</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Media Sosial -->
+      <tr>
+        <td colspan="3">
+          <h2>Media Sosial</h2>
+          <table align="center" border="0">
+            <tr>
+              <td>
+                <a href="https://www.instagram.com/izaki.d.lan?igsh=MXA4MWs1ejJyN3V2aQ==">
+                  <img src="./img/instagram.png" alt="Instagram" width="15" height="15">
+                  izaki.d.lan
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.linkedin.com/in/zaky-dio-a463a9266/">
+                  <img src="./img/Linkdin.png" alt="Linkedin" width="15" height="15">
+                  Zaky Dio Akbar Pangestu
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://github.com/princenizroh">
+                  <img src="./img/github.png" alt="Github" width="15" height="15">
+                  princenizroh
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- Form Kontak -->
+      <tr>
+        <td colspan="3">
+          <h2>Kontak Saya</h2>
+          <form action="#" method="post" align="center">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" required rows="10" cols="50"></textarea><br><br>
+            <input type="submit" value="Kirim">
+          </form>
+        </td>
+      </tr>
     </table>
-    <h2>Hobi</h2>
-    <ul>
-      <li>Bermain Game</li>
-      <li>Menonton Film</li>
-      <li>Membaca Buku</li>
-      <li>Bermain Musik</li>
-    </ul>
-    <h2>Pengalaman</h2>
-    <ol>
-      <li>PT.Davidi Internasional berposisi magang sebagai mechanical maintenance di Balikpapan - 2019</li>
-      <li>PT.Pratama Widya TBK bekerja sebagai RIG Pengeboran di Balikpapan - 2021</li>
-      <li>PT.Rig Nusantara Jaya bekerja sebagai Work Permit di Balikpapan - 2022</li>
-      <li>PT.Jurong Engineering Lestari bekerja sebagai Work Permit di Balikpapan - 2022</li>
-    </ol>
-    <h2>Data Pribadi</h2>
-    <table width="30%" height="30%" border="1">
-      <tr>
-        <th>Jenis Informasi</th>
-        <th>Data</th>
-      </tr>
-      <tr>
-        <td align="center">Nama</td>
-        <td align="center">Zaky Dio Akbar Pangestu</td>
-      </tr>
-      <tr>
-        <td align="center">Tanggal Lahir</td>
-        <td align="center">7 September 2003</td>
-      </tr>
-      <tr>
-        <td align="center">Alamat</td>
-        <td align="center">Jl. Manuntung Gg Darussalam rt 03, Kariangau, Balikpapan Barat</td>
-      </tr>
-    </table>
-    <h2>Media Sosial</h2>
-    <p>
-      <a href="https://www.instagram.com/izaki.d.lan?igsh=MXA4MWs1ejJyN3V2aQ==">
-        <img src="./img/instagram.png" alt="Instagram" width="15" height="15">
-        izaki.d.lan
-      </a>
-    </p>
-    <p>
-      <a href="https://www.linkedin.com/in/zaky-dio-a463a9266/">
-        <img src="./img/Linkdin.png" alt="Linkedin" width="15" height="15">
-        Zaky Dio Akbar Pangestu
-      </a>
-    </p>
-    <p>
-      <a href="https://github.com/princenizroh">
-        <img src="./img/github.png" alt="Github" width="15" height="15">
-        princenizroh
-      </a>
-    </p>  
-    <h2>Kontak Saya</h2>
-    <form action="#" method="post">
-      
-      <label for="nama">Nama:</label><br>
-      <input type="text" id="nama" name="nama" required><br><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      <label for="pesan">Pesan:</label><br>
-      <textarea id="pesan" name="pesan" required rows="10" cols="50"></textarea><br><br>
-      <input type="submit" value="Kirim">
-    </form>
   </body>
 </html>
-

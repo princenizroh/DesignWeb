@@ -1,0 +1,115 @@
+
+/* Gaya Umum */
+body {
+    /* SOAL: ubah font-family menjadi Arial */
+    margin: 0;
+    padding: 0;
+    /* SOAL: background color = #f0f8ff */
+    color: #333;
+}
+
+h1, h2, h3 {
+    /* SOAL: buat text menjadi ditengah halaman */;
+    color: #2c3e50;
+}
+
+p {
+    /* SOAL: buat text menjadi ditengah halaman */;
+    /* SOAL: ukuran font = 18px */
+    line-height: 1.6;
+}
+/* Gaya untuk Daftar Pengalaman */
+ol {
+    /* SOAL: buat text menjadi ditengah halaman */;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+ol li {
+    display: inline-block;
+    /* SOAL: buat text menjadi ditengah halaman */;
+    /* SOAL: lebar dari elemen list hanya 80% */
+    margin-bottom: 10px;
+}
+/* Gaya untuk Tabel Data Pribadi */
+table {
+    margin: 20px auto;
+    /* SOAL: lebar table hanya 30% */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    /* SOAL: tambahkan padding 12px */
+}
+
+th {
+    background-color: #2c3e50;
+    color: #fff;
+    /* SOAL: buat text menjadi ditengah halaman */;
+}
+
+/* Gaya untuk Gambar Profil */
+img {
+    display: block;
+    margin: 20px auto;
+    /* SOAL: gambar berbentuk lingkaran */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk Link Media Sosial */
+ul {
+    list-style-type: none;
+    padding: 0;
+    /* SOAL: buat text menjadi ditengah halaman */;
+}
+
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2980b9;
+    /* SOAL: font menjadi tebal */
+}
+
+ul li a:hover {
+    color: #2c3e50;
+}
+
+/* Gaya untuk Formulir Kontak */
+form {
+    /* SOAL: maksimal lebar form hanya 600px */
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    /* SOAL: jika kursor mengarah ke tombol Kirim akan berubah menjadi icon telapak tangan */
+}
+
+/* SOAL: hover tombol Kirim pada form */ { 
+    background-color: #2980b9;
+}
