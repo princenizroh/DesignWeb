@@ -14,134 +14,214 @@
     <meta name="robots" content="index, follow">
     <meta http-equiv="content-language" content="en">
     <meta http-equiv="refresh" content="60">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style>
+      /* Global Styles */
+      body {
+        font-family: "Arial";
+        margin: 0;
+        padding: 0;
+        background-color: #f0f8ff;
+        color: #333;
+      }
+
+      h1, h2, h3 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      /* Experience List Styles */
+      ol {
+        text-align: center;
+        list-style-position: inside;
+        padding-left: 0;
+      }
+
+      ol li {
+        display: inline-block;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      /* Personal Data Table Styles */
+      table {
+        margin: 20px auto;
+        width: 30%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      table, th, td {
+        border: 1px solid #ddd;
+      }
+
+      th, td {
+        padding: 12px;
+      }
+
+      th {
+        background-color: #2c3e50;
+        color: #fff;
+        text-align: center;
+      }
+
+      /* Profile Picture Styles */
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        height: 200px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul li {
+        display: inline;
+        margin: 0 10px;
+        vertical-align: middle
+      }
+
+      ul li a { 
+        text-decoration: none;
+        color: #2980b9;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      ul li a img {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+      }
+
+      ul li a:hover {
+        color: #2c3e50;
+      }
+
+      /* Contact Form Styles */
+      form {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      form button {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover { 
+        background-color: #2980b9;
+      }
+
+    </style>
     <title>Portofolio</title>
   </head>
   <body>
-    <table width="100%" border="1">
-      <!-- Header -->
-      <tr>
-        <td colspan="3" align="center">
-          <h1>Zaky Dio Akbar Pangestu</h1>
-        </td>
-      </tr>
-
-      <!-- Profil Pribadi dan Foto -->
-      <tr>
-        <td width="70%" valign="top">
-          <h2>Profil Pribadi</h2>
-          <p align="justify">Nama saya Zaky Dio Akbar Pangestu, saya adalah seorang mahasiswa di Institut Teknologi Kalimantan prodi Informatika. 
+    <h1>Zaky Dio Akbar Pangestu</h1>
+    <h2>Profil Pribadi</h2>
+    <p>Nama saya Zaky Dio Akbar Pangestu, saya adalah seorang mahasiswa di Institut Teknologi Kalimantan prodi Informatika. 
             Saya lahir di Klaten pada tanggal 7 September 2003. Saya juga memiliki ketertarikan dalam dunia teknologi dan ingin 
             menjadi seorang game developer maupun indie ataupun masuk ke dalam studio besar. Salah satu yang ingin saya ciptakan
             hasil karya adalah perbanyak game-game multiplayer yang bisa dimainkan oleh banyak orang. Saya juga ingin membuat game 
             yang ada unsur Indonesia di dalamnya. Saya juga ingin membuat game yang bisa dimainkan oleh banyak orang dan semua kalangan.
-          </p>
-        </td>
-        <td width="5%"></td> <!-- Jarak antara teks dan gambar -->
-        <td width="25%" valign="top" align="center">
-          <img src="./img/zaky.jpeg" alt="Foto Profil Zaky Dio Akbar Pangestu" width="150" height="150">
-        </td>
-      </tr>
-
-      <!-- Hobi -->
+      </p>
+    <h2>Hobi</h2>
+    <ul>
+      <li>Bermain Game</li>
+      <li>Menonton Film</li>
+      <li>Membaca Buku</li>
+      <li>Bermain Alat Musik</li>
+    </ul>
+    <h2>Pengalaman</h2>
+    <ol>
+      <li>PT.Davidi Internasional berposisi magang sebagai mechanical maintenance di Balikpapan - 2019</li>
+      <li>PT.Pratama Widya TBK bekerja sebagai RIG Pengeboran di Balikpapan - 2021</li>
+      <li>PT.Rig Nusantara Jaya bekerja sebagai Work Permit di Balikpapan - 2022</li>
+      <li>PT.Jurong Engineering Lestari bekerja sebagai Work Permit di Balikpapan - 2022</li>
+    </ol>
+    <h2>Data Pribadi</h2>
+    <table>
       <tr>
-        <td colspan="3">
-          <h2>Hobi</h2>
-          <ul>
-            <li>Bermain Game</li>
-            <li>Menonton Film</li>
-            <li>Membaca Buku</li>
-            <li>Bermain Musik</li>
-          </ul>
-        </td>
+        <th>Jenis Informasi</th>
+        <th>Data</th>
       </tr>
-
-      <!-- Pengalaman -->
       <tr>
-        <td colspan="3">
-          <h2>Pengalaman</h2>
-          <ol>
-            <li>PT.Davidi Internasional berposisi magang sebagai mechanical maintenance di Balikpapan - 2019</li>
-            <li>PT.Pratama Widya TBK bekerja sebagai RIG Pengeboran di Balikpapan - 2021</li>
-            <li>PT.Rig Nusantara Jaya bekerja sebagai Work Permit di Balikpapan - 2022</li>
-            <li>PT.Jurong Engineering Lestari bekerja sebagai Work Permit di Balikpapan - 2022</li>
-          </ol>
-        </td>
+        <td>Nama</td>
+        <td>Zaky Dio Akbar Pangestu</td>
       </tr>
-
-      <!-- Data Pribadi -->
       <tr>
-        <td colspan="3">
-          <h2>Data Pribadi</h2>
-          <table width="50%" border="1" align="center">
-            <tr>
-              <th>Jenis Informasi</th>
-              <th>Data</th>
-            </tr>
-            <tr>
-              <td align="center">Nama</td>
-              <td align="center">Zaky Dio Akbar Pangestu</td>
-            </tr>
-            <tr>
-              <td align="center">Tanggal Lahir</td>
-              <td align="center">7 September 2003</td>
-            </tr>
-            <tr>
-              <td align="center">Alamat</td>
-              <td align="center">Jl. Manuntung Gg Darussalam rt 03, Kariangau, Balikpapan Barat</td>
-            </tr>
-          </table>
-        </td>
+        <td>Tanggal Lahir</td>
+        <td>7 September 2003</td>
       </tr>
-
-      <!-- Media Sosial -->
       <tr>
-        <td colspan="3">
-          <h2>Media Sosial</h2>
-          <table align="center" border="0">
-            <tr>
-              <td>
-                <a href="https://www.instagram.com/izaki.d.lan?igsh=MXA4MWs1ejJyN3V2aQ==">
-                  <img src="./img/instagram.png" alt="Instagram" width="15" height="15">
-                  izaki.d.lan
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://www.linkedin.com/in/zaky-dio-a463a9266/">
-                  <img src="./img/Linkdin.png" alt="Linkedin" width="15" height="15">
-                  Zaky Dio Akbar Pangestu
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://github.com/princenizroh">
-                  <img src="./img/github.png" alt="Github" width="15" height="15">
-                  princenizroh
-                </a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- Form Kontak -->
-      <tr>
-        <td colspan="3">
-          <h2>Kontak Saya</h2>
-          <form action="#" method="post" align="center">
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="pesan">Pesan:</label><br>
-            <textarea id="pesan" name="pesan" required rows="10" cols="50"></textarea><br><br>
-            <input type="submit" value="Kirim">
-          </form>
-        </td>
+        <td>Alamat</td>
+        <td>Jl. Manuntung Gg Darussalam rt 03, Kariangau, Balikpapan Barat</td>
       </tr>
     </table>
+    <h2>Gambar Profile</h2>
+    <img class="profile-picture" src="./img/zaky.jpeg" alt="Foto Profil Zaky Dio Akbar Pangestu">
+    <h2>Media Sosial</h2>
+    <p>Anda bisa menemukan saya di: </p>
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/izaki.d.lan?igsh=MXA4MWs1ejJyN3V2aQ==">
+          <img src="./img/instagram.png">
+          izaki.d.lan
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/zaky-dio-a463a9266/">
+          <img src="./img/Linkdin.png">
+          Zaky Dio Akbar Pangestu
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/princenizroh">
+          <img src="./img/github.png" >
+          princenizroh
+        </a>
+      </li>
+    </ul>  
+    <h2>Kontak Saya</h2>
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain"> 
+      <label for="nama">Nama:</label><br>
+      <input type="text" id="nama" name="nama" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="pesan">Pesan:</label><br>
+      <textarea id="pesan" name="pesan" required rows="10" cols="50"></textarea><br><br>
+      <button type="submit">Kirim</button>
+    </form>
   </body>
 </html>
+
