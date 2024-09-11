@@ -57,7 +57,7 @@ th {
 img {
     display: block;
     margin: 20px auto;
-    /* SOAL: gambar berbentuk lingkaran */
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -85,7 +85,7 @@ ul li a:hover {
 
 /* Gaya untuk Formulir Kontak */
 form {
-   width: 600%;
+    max-width: 600%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -107,9 +107,9 @@ form button {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    /* SOAL: jika kursor mengarah ke tombol Kirim akan berubah menjadi icon telapak tangan */
+    cursor: grab;
 }
 
-/* SOAL: hover tombol Kirim pada form */ { 
+input[type=submit]:hover { 
     background-color: #2980b9;
 }
