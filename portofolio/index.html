@@ -200,37 +200,32 @@
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
-              // Interaksi dengan klik pada gambar profil
-        const profilePic = document.getElementById('profilePic');
-        profilePic.addEventListener('click', function() {
-          this.style.width = this.style.width === '400px' ? '200px' : '400px';
+        // Interaksi dengan klik pada gambar profil
+        $('#profilePic').click(function() {
+          const isSmall = $(this).width() <= 200;
+          $(this).animate({width: isSmall ? '400px' : '200px'}, 500);
         });
 
-        const themeToggleBtn = document.getElementById('themeToggleBtn');
-        const bodyElement = document.body;
-        themeToggleBtn.addEventListener('click', function() {
-        let body = document.body;
-          body.classList.toggle('dark-theme');
-          this.textContent = body.classList.contains('dark-theme') ? 'Ubah ke Tema Terang' : 'Ubah ke Tema Gelap';
+        // Interaksi dengan tombol tema terang/gelap
+        $('#themeToggleBtn').click(function() {
+          $('body').toggleClass('dark-theme');
+          const isDarkTheme = $('body').hasClass('dark-theme');
+          $(this).text(isDarkTheme ? 'Ubah ke Tema Terang' : 'Ubah ke Tema Gelap');
         });
 
-        window.onload = function() {
-            const skillElements = document.querySelectorAll('.progress-bar');
-            skillElements.forEach(function(skill) {
-                const width = skill.getAttribute('style').match(/\d+/)[0];
-                skill.style.width = "0";
-                setTimeout(function() {
-                    skill.style.width = width + "%";
-                }, 500);
-            });
-        };
-        // Notifikasi ketika mengeklik media sosial
-        const socialLinks = document.querySelectorAll('.list-group-item a');
-        socialLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
-                alert("Anda akan berpindah ke website lain.");
-            });
+        // Efek animasi untuk progress bar saat halaman dimuat
+        $(window).on('load', function() {
+          $('.progress-bar').each(function() {
+            const width = $(this).attr('style').match(/\d+/)[0];
+            $(this).css('width', '0').animate({width: width + '%'}, 500);
+          });
+        });
+
+        // Notifikasi saat mengklik link media sosial
+        $('.list-group-item a').click(function() {
+          alert('Anda akan berpindah ke website lain.');
         });
 
       </script>
